@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk1.8.0_45">
+		<attributes>
+			<attribute name="owner.project.facets" value="java"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jst.server.core.container/org.eclipse.jst.server.tomcat.runtimeTarget/Apache Tomcat v8.0">
+		<attributes>
+			<attribute name="owner.project.facets" value="jst.web"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="lib" path="C:/Users/Geodner/Downloads/jaxrs-ri-2.25/jaxrs-ri/api/javax.ws.rs-api-2.0.1.jar" sourcepath="C:/Users/Geodner/.m2/repository/javax/ws/rs/javax.ws.rs-api/2.0.1/javax.ws.rs-api-2.0.1-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Geodner/Downloads/jaxrs-ri-2.25/jaxrs-ri/ext/javassist-3.20.0-GA.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Geodner/Downloads/jaxrs-ri-2.25/jaxrs-ri/ext/javax.annotation-api-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Geodner/Downloads/jaxrs-ri-2.25/jaxrs-ri/ext/javax.servlet-api-3.0.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Geodner/Downloads/jaxrs-ri-2.25/jaxrs-ri/ext/jaxb-api-2.2.7.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Geodner/Downloads/jaxrs-ri-2.25/jaxrs-ri/ext/jersey-guava-2.25.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Geodner/Downloads/jaxrs-ri-2.25/jaxrs-ri/ext/validation-api-1.1.0.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Geodner/Downloads/jaxrs-ri-2.25/jaxrs-ri/lib/jersey-client.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Geodner/Downloads/jaxrs-ri-2.25/jaxrs-ri/lib/jersey-common.jar" sourcepath="C:/Users/Geodner/.m2/repository/org/glassfish/jersey/core/jersey-common/2.25/jersey-common-2.25-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Geodner/Downloads/jaxrs-ri-2.25/jaxrs-ri/lib/jersey-container-servlet.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Geodner/Downloads/jaxrs-ri-2.25/jaxrs-ri/lib/jersey-container-servlet-core.jar" sourcepath="C:/Users/Geodner/.m2/repository/org/glassfish/jersey/containers/jersey-container-servlet-core/2.25/jersey-container-servlet-core-2.25-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Geodner/Downloads/jaxrs-ri-2.25/jaxrs-ri/lib/jersey-media-jaxb.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Geodner/Downloads/jaxrs-ri-2.25/jaxrs-ri/lib/jersey-server.jar" sourcepath="C:/Users/Geodner/.m2/repository/org/glassfish/jersey/core/jersey-server/2.25/jersey-server-2.25-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Geodner/Downloads/app-oct-24/app-oct-24/Inventory_App/Inventory_App/build/web/WEB-INF/lib/postgresql-9.4.1208.jre6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Geodner/Downloads/querydsl-jpa-4.1.3-full-deps/querydsl-jpa-4.1.3/lib/all/eclipselink-2.6.2.jar" sourcepath="C:/Users/Geodner/.m2/repository/org/eclipse/persistence/eclipselink/2.6.2-RC1/eclipselink-2.6.2-RC1-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Geodner/Downloads/querydsl-jpa-4.1.3-full-deps/querydsl-jpa-4.1.3/lib/all/hibernate-commons-annotations-4.0.5.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Geodner/Downloads/querydsl-jpa-4.1.3-full-deps/querydsl-jpa-4.1.3/lib/all/hibernate-core-4.3.11.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Geodner/Downloads/querydsl-jpa-4.1.3-full-deps/querydsl-jpa-4.1.3/lib/all/hibernate-entitymanager-4.3.11.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Geodner/Downloads/querydsl-jpa-4.1.3-full-deps/querydsl-jpa-4.1.3/lib/all/hibernate-jpa-2.1-api-1.0.0.Final.jar" sourcepath="C:/Users/Geodner/.m2/repository/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Geodner/Downloads/querydsl-jpa-4.1.3-full-deps/querydsl-jpa-4.1.3/lib/all/hibernate-validator-4.3.1.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Geodner/Downloads/querydsl-jpa-4.1.3-full-deps/querydsl-jpa-4.1.3/lib/all/jboss-logging-3.1.3.GA.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Geodner/Downloads/querydsl-jpa-4.1.3-full-deps/querydsl-jpa-4.1.3/lib/all/jboss-logging-annotations-1.2.0.Beta1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Geodner/Downloads/querydsl-jpa-4.1.3-full-deps/querydsl-jpa-4.1.3/lib/all/jboss-transaction-api_1.2_spec-1.0.0.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Geodner/Downloads/jOOQ-3.8.4/jOOQ-3.8.4/third-party/src/log4j-1.2.16-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Geodner/Downloads/jOOQ-3.8.4/jOOQ-3.8.4/third-party/src/slf4j-api-1.6.1-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Geodner/Downloads/jOOQ-3.8.4/jOOQ-3.8.4/third-party/src/validation-api-1.1.0.Alpha1-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Geodner/Downloads/javax.persistence.jar/javax.persistence.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Geodner/Downloads/gson-2.2.4-sources.jar/gson-2.2.4-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Geodner/Downloads/gson-2.2.3.jar/gson-2.2.3.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="lib" path="C:/Users/Geodner/Downloads/cors-filter-1.3.2-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Geodner/Downloads/org.eclipse.persistence.moxy.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Geodner/Downloads/jaxb-api-osgi.jar/jaxb-api-osgi.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Geodner/Downloads/glassfish-4.1.2/glassfish4/glassfish/modules/jackson-core.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Geodner/Downloads/jackson-annotations-2.8.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Geodner/Downloads/jackson-databind-2.8.1.jar"/>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>
