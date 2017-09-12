@@ -20,6 +20,9 @@ import exceptions.RollbackFailureException;
 /**
  *
  * @author Geodner
+ * 
+ * Reflection class that allows the app to perform the following 
+ * database transaction: insert, updat and delete
  */
 public class EntityDAO<T> implements Serializable {
 

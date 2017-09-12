@@ -27,7 +27,6 @@ public class AddressesProxy implements java.io.Serializable {
 	}
 
 	@Id
-
 	@Column(name = "id")
 	public Integer getId() {
 		return this.id;

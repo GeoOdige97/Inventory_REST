@@ -15,7 +15,10 @@ import org.junit.Before;
  * This class was referenced from the following website
  * 
  * https://www.mkyong.com/servlet/what-is-listener-servletcontextlistener-example
-
+ * 
+ * Creates and monitors an instance of the database connection
+ * so the the application has permission to perform database
+ * transactions
 */
 
 @WebListener
@@ -24,6 +27,8 @@ public class ServletListener implements ServletContextListener {
 	private static EntityManagerFactory emf  = null;
 	
 	
+	// Initializes the database connection by grabbing
+	// the properties from persistence.xml
 	@Before
 	@Override
 	public void contextInitialized(ServletContextEvent arg0) {
@@ -31,7 +36,8 @@ public class ServletListener implements ServletContextListener {
 		System.out.println("-------> ServletContextListener started");		
 	}
 	
-	
+	// Removes the database connection by when
+	// the application is restarted or stoppped
 	@After
 	@Override
 	public void contextDestroyed(ServletContextEvent arg0) {
@@ -40,6 +46,8 @@ public class ServletListener implements ServletContextListener {
 		
 	}
 	
+	// Makes sure that only one instance is the Entity Manager
+	// is running
     private static EntityManager createEntityManager() {
         if (emf == null) {
             throw new IllegalStateException("Context is not initialized yet.");
@@ -47,6 +55,7 @@ public class ServletListener implements ServletContextListener {
         return emf.createEntityManager();
     }
     
+    // Get access to the created Entity Manager
     public static EntityManager getEntityManager() {
       return createEntityManager();
     }
