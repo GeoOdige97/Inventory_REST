@@ -49,5 +49,7 @@
 	<classpathentry kind="lib" path="C:/Users/Geodner/Downloads/glassfish-4.1.2/glassfish4/glassfish/modules/jackson-core.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Geodner/Downloads/jackson-annotations-2.8.1.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Geodner/Downloads/jackson-databind-2.8.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Geodner/Downloads/java-json.jar/java-json.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Geodner/Downloads/jcalendar-1.1.4.jar/jcalendar-1.1.4.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

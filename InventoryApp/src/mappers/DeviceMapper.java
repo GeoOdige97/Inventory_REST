@@ -8,9 +8,9 @@ import javax.persistence.Query;
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 
-import controller.ServletListener;
-import entities.Device;
-import entities.Registration;
+import dao.DBContextListener;
+import entities.impl.Device;
+import entities.impl.Registration;
 
 public class DeviceMapper {
 	
@@ -35,7 +35,7 @@ public class DeviceMapper {
 	
 		EntityManager em = null;
 		try {
-			em = ServletListener.getEntityManager();
+			em = DBContextListener.getEntityManager();
 			CriteriaBuilder cb = em.getCriteriaBuilder();
 			CriteriaQuery<Device> cq = cb.createQuery(Device.class);
 			cq.select(cq.from(Device.class)); 
@@ -57,7 +57,7 @@ public class DeviceMapper {
 		
 		EntityManager em = null;
 		try {
-			em = ServletListener.getEntityManager();
+			em = DBContextListener.getEntityManager();
 			List<Device> entityList = new ArrayList<Device>();
 			entityList.add((Device) em.find(Device.class, id));
 			return entityList;

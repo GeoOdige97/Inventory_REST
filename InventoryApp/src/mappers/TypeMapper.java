@@ -8,8 +8,8 @@ import javax.persistence.Query;
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 
-import controller.ServletListener;
-import entities.Type;
+import dao.DBContextListener;
+import entities.impl.Type;
 
 public class TypeMapper {
 	
@@ -32,7 +32,7 @@ public class TypeMapper {
 	
 		EntityManager em = null;
 		try {
-			em = ServletListener.getEntityManager();
+			em = DBContextListener.getEntityManager();
 			CriteriaBuilder cb = em.getCriteriaBuilder();
 			CriteriaQuery<Type> cq = cb.createQuery(Type.class);
 			cq.select(cq.from(Type.class)); 
@@ -54,7 +54,7 @@ public class TypeMapper {
 		
 		EntityManager em = null;
 		try {
-			em = ServletListener.getEntityManager();
+			em = DBContextListener.getEntityManager();
 			List<Type> entityList = new ArrayList<Type>();
 			entityList.add((Type) em.find(Type.class, id));
 			return entityList;

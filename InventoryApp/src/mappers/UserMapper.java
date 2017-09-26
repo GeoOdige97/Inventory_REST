@@ -8,8 +8,8 @@ import javax.persistence.Query;
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 
-import controller.ServletListener;
-import entities.User;
+import dao.DBContextListener;
+import entities.impl.User;
 
 public class UserMapper {
 	
@@ -33,7 +33,7 @@ public class UserMapper {
 	
 		EntityManager em = null;
 		try {
-			em = ServletListener.getEntityManager();
+			em = DBContextListener.getEntityManager();
 			CriteriaBuilder cb = em.getCriteriaBuilder();
 			CriteriaQuery<User> cq = cb.createQuery(User.class);
 			cq.select(cq.from(User.class)); 
@@ -55,7 +55,7 @@ public class UserMapper {
 		
 		EntityManager em = null;
 		try {
-			em = ServletListener.getEntityManager();
+			em = DBContextListener.getEntityManager();
 			List<User> entityList = new ArrayList<User>();
 			entityList.add((User) em.find(User.class, id));
 			return entityList;

@@ -8,8 +8,8 @@ import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Root;
 
-import controller.ServletListener;
-import entities.Username;
+import dao.DBContextListener;
+import entities.impl.Username;
 
 public class UsernameMapper {
 	
@@ -33,7 +33,7 @@ public class UsernameMapper {
 	
 		EntityManager em = null;
 		try {
-			em = ServletListener.getEntityManager();
+			em = DBContextListener.getEntityManager();
 			CriteriaBuilder cb = em.getCriteriaBuilder();
 			CriteriaQuery<Username> cq = cb.createQuery(Username.class);
 			cq.select(cq.from(Username.class)); 
@@ -55,7 +55,7 @@ public class UsernameMapper {
 		
 		EntityManager em = null;
 		try {
-			em = ServletListener.getEntityManager();
+			em = DBContextListener.getEntityManager();
 			List<Username> entityList = new ArrayList<Username>();
 			entityList.add((Username) em.find(Username.class, id));
 			return entityList;
@@ -69,7 +69,7 @@ public class UsernameMapper {
 	public static Username compareCredentials(String username,String password){
 		EntityManager em = null;
 		try {
-			em = ServletListener.getEntityManager();
+			em = DBContextListener.getEntityManager();
 			CriteriaBuilder cb = em.getCriteriaBuilder();
 			
 			CriteriaQuery<Username> cq = cb.createQuery(Username.class);

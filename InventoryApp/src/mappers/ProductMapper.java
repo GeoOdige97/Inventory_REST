@@ -8,8 +8,8 @@ import javax.persistence.Query;
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 
-import controller.ServletListener;
-import entities.Product;
+import dao.DBContextListener;
+import entities.impl.Product;
 
 public class ProductMapper {
 	
@@ -31,7 +31,7 @@ public class ProductMapper {
 	
 		EntityManager em = null;
 		try {
-			em = ServletListener.getEntityManager();
+			em = DBContextListener.getEntityManager();
 			CriteriaBuilder cb = em.getCriteriaBuilder();
 			CriteriaQuery<Product> cq = cb.createQuery(Product.class);
 			cq.select(cq.from(Product.class)); 
@@ -53,7 +53,7 @@ public class ProductMapper {
 		
 		EntityManager em = null;
 		try {
-			em = ServletListener.getEntityManager();
+			em = DBContextListener.getEntityManager();
 			List<Product> entityList = new ArrayList<Product>();
 			entityList.add((Product) em.find(Product.class, id));
 			return entityList;

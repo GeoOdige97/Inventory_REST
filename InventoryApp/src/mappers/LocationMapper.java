@@ -8,8 +8,8 @@ import javax.persistence.Query;
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 
-import controller.ServletListener;
-import entities.Location;
+import dao.DBContextListener;
+import entities.impl.Location;
 
 public class LocationMapper {
 	
@@ -35,7 +35,7 @@ public class LocationMapper {
 	
 		EntityManager em = null;
 		try {
-			em = ServletListener.getEntityManager();
+			em = DBContextListener.getEntityManager();
 			CriteriaBuilder cb = em.getCriteriaBuilder();
 			CriteriaQuery<Location> cq = cb.createQuery(Location.class);
 			cq.select(cq.from(Location.class)); 
@@ -57,7 +57,7 @@ public class LocationMapper {
 		
 		EntityManager em = null;
 		try {
-			em = ServletListener.getEntityManager();
+			em = DBContextListener.getEntityManager();
 			List<Location> entityList = new ArrayList<Location>();
 			entityList.add((Location) em.find(Location.class, id));
 			return entityList;

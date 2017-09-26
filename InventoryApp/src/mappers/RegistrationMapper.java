@@ -10,9 +10,9 @@ import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Predicate;
 import javax.persistence.criteria.Root;
 
-import controller.ServletListener;
-import entities.Registration;
-import entities.User;
+import dao.DBContextListener;
+import entities.impl.Registration;
+import entities.impl.User;
 
 public class RegistrationMapper {
 
@@ -36,7 +36,7 @@ public class RegistrationMapper {
 
 		EntityManager em = null;
 		try {
-			em = ServletListener.getEntityManager();
+			em = DBContextListener.getEntityManager();
 			CriteriaBuilder cb = em.getCriteriaBuilder();
 			CriteriaQuery<Registration> cq = cb.createQuery(Registration.class);
 			cq.select(cq.from(Registration.class)); 
@@ -58,7 +58,7 @@ public class RegistrationMapper {
 
 		EntityManager em = null;
 		try {
-			em = ServletListener.getEntityManager();
+			em = DBContextListener.getEntityManager();
 			List<Registration> entityList = new ArrayList<Registration>();
 			entityList.add((Registration) em.find(Registration.class, id));
 			return entityList;
@@ -77,7 +77,7 @@ public class RegistrationMapper {
 		List<Registration> registrationList = new ArrayList<Registration>(0);
 
 		try {
-			em = ServletListener.getEntityManager();
+			em = DBContextListener.getEntityManager();
 			CriteriaBuilder cb = em.getCriteriaBuilder();
 
 			CriteriaQuery<?> cq = cb.createQuery();
@@ -113,7 +113,7 @@ public class RegistrationMapper {
 	public static List<Registration> findAllLatestRegistration (String column){
 		EntityManager em = null;
 		try {
-			em = ServletListener.getEntityManager();
+			em = DBContextListener.getEntityManager();
 			CriteriaBuilder cb = em.getCriteriaBuilder();
 
 			CriteriaQuery<Registration> cq = cb.createQuery(Registration.class);
@@ -138,7 +138,7 @@ public class RegistrationMapper {
 		EntityManager em = null;
 		Predicate pDeviceId = null;
 		try {
-			em = ServletListener.getEntityManager();
+			em = DBContextListener.getEntityManager();
 			CriteriaBuilder cb = em.getCriteriaBuilder();
 
 			CriteriaQuery<?> cq = cb.createQuery();
@@ -162,7 +162,7 @@ public class RegistrationMapper {
 		EntityManager em = null;
 		Predicate pUserId = null;
 		try {
-			em = ServletListener.getEntityManager();
+			em = DBContextListener.getEntityManager();
 			CriteriaBuilder cb = em.getCriteriaBuilder();
 
 			CriteriaQuery<?> cq = cb.createQuery();

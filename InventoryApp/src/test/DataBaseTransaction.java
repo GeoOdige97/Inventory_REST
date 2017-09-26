@@ -2,8 +2,8 @@ package test;
 
 import org.junit.Test;
 
-import controller.EntityDAO;
-import entities.Username;
+import dao.impl.EntityDAO;
+import entities.impl.Username;
 import mappers.UsernameMapper;
 
 public class DataBaseTransaction {
@@ -65,11 +65,11 @@ public class DataBaseTransaction {
 	@Test
 	public void testEnum(){
 		
-		EntityDAO<Username> jpacUsername = new EntityDAO<Username>(); 
+		/*EntityDAO<Username> jpacUsername = new EntityDAO<Username>(); 
 		
 		 Username admin = UsernameMapper.compareCredentials("admin", "admin");
 		 
-		 System.out.println("user in database: " + admin);
+		 System.out.println("user in database: " + admin);*/
 	}
 
 
